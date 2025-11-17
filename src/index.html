@@ -11,8 +11,11 @@
 </head>
 
 <body>
+  <div id="skipLink">
+    <a href="#mainCont">Skip to main content</a>
+  </div>
   <!-- Navbar section -->
-  <nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-xl sticky-top" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand fw-bold fs-3" aria-current="page" href="index.html"><img class="brand-img" src="./images/dilloworks_logo.png" alt="dilloworks logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,33 +41,33 @@
   </nav>
 
   <!-- Hero / Jumbotron -->
-  <header class="container-fluid jumbotron jumbotron-index pb-5 text-center text-white">
+  <header aria-labelledby="pageTitle" class="container-fluid jumbotron jumbotron-index pb-5 text-center text-white">
     <h1 class="display-3 fw-bold pt-5">Dilloworks Industries</h1>
-    <p class="lead fw-normal">Welcome!</p>
+    <p class="fw-normal">Welcome!</p>
   </header>
 
-  <main>
-    <div class="container-fluid jumbotron jumbotron-banner jumbotron-about pb-5 mt-5 text-center text-white">
+  <main class="section-main mb-5" id="mainCont">
+    <div class="container-fluid jumbotron jumbotron-banner jumbotron-about pb-4 text-center text-white">
       <h2 class="display-5 fw-bold pt-5">Who are we, anyway?</h2>
-      <p class="lead fw-normal">See what Dilloworks Industries is all about!</p>
+      <p class="fw-normal">See what Dilloworks Industries is all about!</p>
       <a class="btn btn-lg text-dGray" href="about.html" role="button">About Us</a>
     </div>
 
-    <div class="container-fluid jumbotron jumbotron-banner jumbotron-belatross pb-5 mt-5 text-center text-white">
+    <div class="container-fluid jumbotron jumbotron-banner jumbotron-belatross pb-4 mt-3 text-center text-white">
       <h2 class="display-5 fw-bold pt-5">A battle at the end of time</h2>
-      <p class="lead fw-normal">Check out our upcoming trading card game!</p>
+      <p class="fw-normal">Check out our upcoming trading card game!</p>
       <a class="btn btn-lg text-dGray" href="belatross.html" role="button">End of Time: Belatross</a>
     </div>
 
-    <div class="container-fluid jumbotron jumbotron-banner jumbotron-supermart pb-5 mt-5 text-center text-white">
+    <div class="container-fluid jumbotron jumbotron-banner jumbotron-supermart pb-4 mt-3 text-center text-white">
       <h2 class="display-5 fw-bold pt-5">A grocery adventure</h2>
-      <p class="lead fw-normal">Check out our upcoming platformer!</p>
+      <p class="fw-normal">Check out our upcoming platformer!</p>
       <a class="btn btn-lg text-dGray" href="supermart.html" role="button">Poof & Dillo Go to the Super Supermart</a>
     </div>
 
-    <div class="container-fluid jumbotron jumbotron-banner jumbotron-store pb-5 mt-5 text-center text-white">
+    <div class="container-fluid jumbotron jumbotron-banner jumbotron-store pb-4 mt-3 text-center text-white">
       <h2 class="display-5 fw-bold pt-5">Like what you see?</h2>
-      <p class="lead fw-normal">Browse our store!</p>
+      <p class="fw-normal">Browse our store!</p>
       <a class="btn btn-lg text-dGray" href="store.html" role="button">Store</a>
     </div>
   </main>

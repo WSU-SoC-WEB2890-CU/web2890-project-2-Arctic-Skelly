@@ -1,4 +1,4 @@
-/* Your styles go here */
+/* Note: Required documents are in the Resources folder */
 @use 'sass:color';
 
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
@@ -75,7 +75,22 @@ $utilities: map-merge(
 
 body {
     background-color: $dBlue;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+}
+
+#skipLink {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+
+    &:focus{
+        position: static;
+        width: auto;
+        height: auto;
+    }
 }
 
 .navbar-brand, .brand-img {
@@ -91,7 +106,7 @@ nav {
         color: white;
         font-weight: bold;
         font-size: 1.5rem;
-        border-bottom: 5px solid $dBlue;
+        border-bottom: 5px solid rgba(0, 0, 0, .0);
 
         &:hover {
             color: $lYellow;
@@ -157,11 +172,25 @@ header {
     border-radius: .375rem;
 }
 
-.col-r-supermart {
-    margin-left: 20rem;
+.play-text {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 
-.mobile-belatross, .mobile-supermart {
+.center-row {
+    display: flex;
+    justify-content: center;
+}
+
+#belatross-cards {
+    width: 400px;
+}
+
+.mobile-supermart, #mobile-belatross-gallery {
     display: none;
 }
 
@@ -169,15 +198,14 @@ footer {
     background: linear-gradient(90deg, $lBlue 255px, $dBlue 50%, $dBlue);
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(xl) {
 
     .navbar-toggler {
         background-color: white;
     }
 
     nav {
-        background: linear-gradient(90deg, white 160px, $lBlue 160px, $lBlue 255px, $dBlue);
-        border-bottom: 5px solid white;
+        background: linear-gradient(55deg, white 450px, $lBlue 450px, $lBlue 555px, $dBlue 70%, $dBlue);
     
         .nav-link {
             color: $dGray;
@@ -187,16 +215,26 @@ footer {
     
             &:hover {
                 color: $dYellow;
-                border-bottom: 5px solid white;
+                border-bottom: none;
             }
         }
     }
 
-    .desktop-belatross, .desktop-supermart {
+    .desktop-supermart, #desktop-belatross-gallery {
         display: none;
     }
 
-    .mobile-belatross, .mobile-supermart {
+    .mobile-supermart, #mobile-belatross-gallery {
         display: block;
+    }
+
+    footer {
+        background: linear-gradient(90deg, $lBlue, $dBlue);
+    }
+}
+
+@include media-breakpoint-down(md) {
+    #belatross-cards {
+        width: 100%;
     }
 }

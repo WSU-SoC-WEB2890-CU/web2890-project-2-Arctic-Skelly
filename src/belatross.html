@@ -6,13 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
   <meta name="description" content="TODO: Project 2 ...">
-  <title>Dilloworks Industries</title>
+  <title>End of Time: Belatross | Dilloworks Industries</title>
   <link rel="stylesheet" href="./stylesheets/main.scss">
 </head>
 
 <body>
+  <div id="skipLink">
+    <a href="#mainCont">Skip to main content</a>
+  </div>
   <!-- Navbar section -->
-  <nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-xl sticky-top" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand fw-bold fs-3" aria-current="page" href="index.html"><img class="brand-img" src="./images/dilloworks_logo.png" alt="dilloworks logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,25 +41,183 @@
   </nav>
 
   <!-- Hero / Jumbotron -->
-  <header class="container-fluid jumbotron jumbotron-belatross pb-5 text-center text-white">
+  <header aria-labelledby="pageTitle" class="container-fluid jumbotron jumbotron-belatross pb-5 text-center text-white">
     <h1 class="display-3 fw-bold pt-5">End of Time: Belatross</h1>
   </header>
 
-  <main class="section-main mb-5">
-    <div class="desktop-belatross">
+  <main class="section-main mb-5" id="mainCont">
+    <div id="belatross-cont" class="row">
+      <div id="belatross-intro" class="mb-5 col">
+        <h2 class="text-dBlue center-text">Introduction</h2>
+        <p>"Belatross" is a Trading Card Game between two players, who battle at the end of the world, summoning
+          warriors and relics from the past to fight at the climax at the end of time!</p>
+        <p>Belatross aims to bridge the gap between "Approachability," and "Nuanced deckbuilding" that many other
+          trading card games seem to struggle with, by simplifying terminology, as well as adapting existing
+          mechanics to keep both players engaged at all times.</p>
+        <p>Belatross also aims to encourage and cultivate a dedicated community, by hiring artists from within
+          the community itself, and even turning some users into cameos with their own cards!</p>
+        <p>Belatross aims to reach full production by Winter 2026!</p>
+      </div>
+      <div id="desktop-belatross-gallery" class="col center-row">
+        <div id="belatross-cards">
+          <h2 class="text-dBlue center-text">Card Gallery</h2>
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/belatross_card_azrubekt.png" class="d-block w-100" alt="Mutant Devourer Azrubekt, a Psychic element Warrior card">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/belatross_card_ice_queen.png" class="d-block w-100" alt="The Ice Queen Cometh, a Water element Trap card">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/belatross_card_angelissa.png" class="d-block w-100" alt="Purifier Angelissa, a Solar element Warrior card">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/belatross_card_kana.png" class="d-block w-100" alt="Thunder Acolyte Kana, a Wind element Warrior card">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/belatross_card_trust.png" class="d-block w-100" alt="Firefight Master Trust, a Psychic element Warrior card">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/belatross_card_crown_poof.png" class="d-block w-100" alt="Crown of the Grand Poof Army, a Solar element Item card">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/belatross_card_back.png" class="d-block w-100" alt="Back of a Belatross card">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="belatross-play" class="mb-5">
         <h2 class="text-dBlue center-text">Here's How To Play!</h2>
         <div class="row">
             <div class="col img-fluid"><img src="./images/belatross_rules1.png" alt="Belatross rules 1"></div>
+            <div class="play-text"> <!--For screenreaders-->
+              <p>This card game takes influences from games like "Magic: The Gathering" as well as "Yu-Gi-Oh,"
+                but intends to be easier to learn and approach, like "Hearthstone." To play you will need the
+                following...</p>
+              <ul>
+                <li>A deck of 30-60 cards</li>
+                <li>10 tokens to use as "Summoner points"</li>
+                <li>An opponent with their own deck and tokens</li>
+              </ul>
+              <p>Decide on who goes first. Each player draws 7 cards from the top of their decks. At the start
+                of your turn, draw a card from your deck. At the start of a player's turn, they receive 5
+                "Summoner Points." These are your currency to play cards.</p>
+              <p>Each card costs a certain amount of Summoner Points, with more powerful cards costing more. Any
+                unspent Summoner points carry over to your next turn. You can have up to a total of 10 points.</p>
+            </div>
             <div class="col img-fluid"><img src="./images/belatross_rules2.png" alt="Belatross rules 2"></div>
+            <div class="play-text">
+              <p>Card Anatomy</p>
+              <ol>
+                <li>Card Title/Name</li>
+                <li>Point cost</li>
+                <li>Element Affiliation: Elements are Fire, Water, Earth, Wind, Solar, and Psychic</li>
+                <li>Card Keywords, used to categorize card attributes</li>
+                <li>DEF Value: How much ATK value is needed to remove this card</li>
+                <li>ATK Value: How much this card can attack for each turn</li>
+                <li>Ability Description: Card rule that remains active until card is removed</li>
+                <li>Flavor text quote</li>
+              </ol>
+              <p>There are 3 card types:</p>
+              <div id="warrior-cards">
+                <p>Warrior</p>
+                <ul>
+                  <li>Character cards</li>
+                  <li>Primary form of damage and defense</li>
+                  <li>Always come with an ATK and DEF value</li>
+                  <li>DEF value is the required total ATK value required to remove the card in one turn.</li>
+                  <li>Opponent may combine ATK values of any active warrior to "team up" against a single card
+                    with high DEF value.</li>
+                </ul>
+              </div>
+              <div id="trap-cards">
+                <p>Trap</p>
+                <ul>
+                  <li>Situational card that has a negative effect on the opponent</li>
+                  <li>Traps are placed face down hidden from the opponent's view</li>
+                  <li>Each card has certain conditions in order to take effect.</li>
+                  <li>Opponent may target any trap card to destroy it, though that may activate the trap instead.</li>
+                  <li>Unless otherwise stated, a trap card has a DEF value of 1, and can be easily destroyed.</li>
+                </ul>
+              </div>
+              <div id="item-cards">
+                <p>Item</p>
+                <ul>
+                  <li>Item cards that grant the player a positive effect.</li>
+                  <li>Items are either "Summoned" or "Equipped."</li>
+                  <li>Equipped items must be attached to a Warrior card in play.</li>
+                  <li>If a warrior card with a item is defeated, the item card is removed as well.</li>
+                </ul>
+              </div>
+            </div>
             <div class="col img-fluid"><img src="./images/belatross_rules3.png" alt="Belatross rules 3"></div>
+            <div class="play-text">
+              <p>Each player turn involves:</p>
+              <ul>
+                <li>Refreshing your Summoner's Tokens</li>
+                <li>Drawing a card</li>
+                <li>Playing however many cards you wish</li>
+                <li>Attacking with your active cards</li>
+                <li>The turn ALWAYS ends with attacking.</li>
+              </ul>
+              <p>Players continue back and forth with their turns in like manner. If the opponent has no active
+                cards in play during your turn, you may attack them directly. Summoner health is decided on
+                beforehand and is relevant to game length.</p>
+              <p>Victory is achieved when the opponent either runs out of Summoner health, or runs out of cards to play.</p>
+            </div>
         </div>
-    </div>
+      </div>
 
-    <div class="mobile-belatross">
-        <h2 class="text-dBlue center-text">Here's How To Play!</h2>
-        <div class="row mb-4 img-fluid"><img src="./images/belatross_rules1.png" alt="Belatross rules 1"></div>
-        <div class="row mb-4 img-fluid"><img src="./images/belatross_rules2.png" alt="Belatross rules 2"></div>
-        <div class="row img-fluid"><img src="./images/belatross_rules3.png" alt="Belatross rules 3"></div>
+      <div id="mobile-belatross-gallery">
+        <div id="belatross-cards">
+          <h2 class="text-dBlue center-text">Card Gallery</h2>
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/belatross_card_azrubekt.png" class="d-block w-100" alt="Mutant Devourer Azrubekt, a Psychic element Warrior card">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/belatross_card_ice_queen.png" class="d-block w-100" alt="The Ice Queen Cometh, a Water element Trap card">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/belatross_card_angelissa.png" class="d-block w-100" alt="Purifier Angelissa, a Solar element Warrior card">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/belatross_card_kana.png" class="d-block w-100" alt="Thunder Acolyte Kana, a Wind element Warrior card">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/belatross_card_trust.png" class="d-block w-100" alt="Firefight Master Trust, a Psychic element Warrior card">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/belatross_card_crown_poof.png" class="d-block w-100" alt="Crown of the Grand Poof Army, a Solar element Item card">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/belatross_card_back.png" class="d-block w-100" alt="Back of a Belatross card">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
     </div>
   </main>
 

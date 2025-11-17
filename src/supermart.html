@@ -6,13 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
   <meta name="description" content="TODO: Project 2 ...">
-  <title>Dilloworks Industries</title>
+  <title>Poof & Dillo Go to the Super Supermart | Dilloworks Industries</title>
   <link rel="stylesheet" href="./stylesheets/main.scss">
 </head>
 
 <body>
+  <div id="skipLink">
+    <a href="#mainCont">Skip to main content</a>
+  </div>
   <!-- Navbar section -->
-  <nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-xl sticky-top" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand fw-bold fs-3" aria-current="page" href="index.html"><img class="brand-img" src="./images/dilloworks_logo.png" alt="dilloworks logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,11 +41,11 @@
   </nav>
 
   <!-- Hero / Jumbotron -->
-  <header class="container-fluid jumbotron jumbotron-supermart pb-5 text-center text-white">
+  <header aria-labelledby="pageTitle" class="container-fluid jumbotron jumbotron-supermart pb-5 text-center text-white">
     <h1 class="display-3 fw-bold pt-5">Poof & Dillo Go to the Super Supermart</h1>
   </header>
 
-  <main class="section-main mb-5">
+  <main class="section-main mb-5" id="mainCont">
     <div class="desktop-supermart">
         <div class="row">
             <div class="col">
@@ -67,7 +70,7 @@
                     Everyone rated release, and is working to be released on all available
                     platforms for digital purchase in Spring 2028!</p>
             </div>
-            <div class="col col-r-supermart"><img class="img-fluid" src="./images/supermart_moveset.png" alt="poof and dillo moveset sketches"></div>
+            <div class="col col-r-supermart center-row"><img class="img-fluid" src="./images/supermart_moveset.png" alt="poof and dillo moveset sketches"></div>
         </div>
     </div>
 
